@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="grid">
+    <ng-container *ngFor="let row of nodes">
+      <div>
+        <app-node
+          *ngFor="let node of row"
+          col="{{ node.col }}"
+          row="{{ node.row }}"
+          isStartNode="{{ node.isStartNode }}"
+          isFinishNode="{{ node.isFinishNode }}"
+        >
+        </app-node>
+      </div>
+    </ng-container>
+  </div>
+</div>
